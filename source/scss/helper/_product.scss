@@ -1,6 +1,334 @@
 /* ---------------------------------------------------------- */
 /* product */
 
+#product-main{
+    padding-bottom: 60px;
+
+    .logo{
+        text-align: left;
+        margin-bottom: 90px;
+
+        .fa-arrow-left{
+            font-size: 24px;
+            margin-right: 5px;
+            transform: translateY(2px);
+        }
+    }
+
+    .link{
+        .fa-arrow-left{
+            transition: all 0.3s;
+        }
+        &:hover .fa-arrow-left{
+            transform: translateY(2px) translateX(-4px);
+        }
+    }
+} 
+
+.product-banner{
+    margin-bottom: 150px;
+    @include s-pad(){
+        margin-bottom: 120px;
+    }
+
+    @include phone(){
+        margin-bottom: 50px;
+    }
+
+    .content-pic{
+        position: relative;
+        @include bg-img-default(720px,400px);
+        margin: 0 auto;
+
+        @include s-pad(){
+            width: 80%;
+            height: 0px;
+            padding-bottom: 45%;
+        }
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 55%;
+        }
+
+        .t1-t2{
+            @include phone(){
+                position: absolute;
+                top: -40px;
+                right: 0;
+            }
+        }
+
+        .pro-t1{
+            position: absolute;
+            top: -48px;
+            right: 0;
+            @include phone(){
+                position: relative;
+                top: auto;
+                right: auto;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .pro-t2{
+            position: absolute;
+            top: 48px;
+            right: -98px;
+            transform: rotate(-270deg);
+            @include phone(){
+                position: relative;
+                top: auto;
+                right: auto;
+                transform: rotate(0deg);
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .t3-num{
+            @include phone(){
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .pro-t3{
+            position: absolute;
+            bottom: -48px;
+            left: 0;
+            transform: rotate(-180deg);
+            @include phone(){
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: rotate(0deg);
+            }
+        }
+        .content-num{
+            position: absolute;
+            bottom: 0;
+            left: -50px;
+            transform: rotate(-90deg);
+            @include phone(){
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: rotate(0deg); 
+            }
+        }
+
+        .bg-decoration{
+            position: absolute;
+            top: -50px;
+            left: -60px;
+            z-index: -1;
+        }
+
+        .border-decoration{
+            position: absolute;
+            bottom: -50px;
+            right: -60px;
+            z-index: -1;
+            width: 480px;
+            height: 200px;
+        }
+    }
+}
+
+.product-detail{
+    margin-bottom: 100px;
+
+    @include s-pad(){
+        margin-bottom: 60px;
+    }
+
+    @include phone(){
+        margin-bottom: 40px;
+    }
+
+    > *{
+        display: inline-block;
+        vertical-align: top;
+        @include s-pad(){
+            display: block;
+        }
+        @include phone(){
+            display: block;
+        }
+    }
+
+    .pd-side{
+        width: 210px;
+        @include s-pad(){
+            width: 100%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+    .pd-main{
+        width: 600px;
+        @include s-pad(){
+            width: 100%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+
+    .pd-side .font-italic{
+        transform: rotate(90deg) translateX(95px);
+        @include s-pad(){
+            transform: rotate(0deg) translateX(0px);
+            margin-bottom: 12px;
+        }
+        @include phone(){
+            transform: rotate(0deg) translateX(0px);
+            margin-bottom: 12px;
+        }
+    }
+
+    .pd-main .content-title{
+        margin-bottom: 2px;
+    }
+
+    .pd-main .subtitle{
+        font-size: $font-subtitle;
+        font-weight: bold;
+        color: #000000;
+        line-height: 36px;
+        margin-bottom: 15px;
+        @include s-pad(){
+            margin-bottom: 10px;
+        }
+        @include phone(){
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+    }
+
+    .pd-main p{
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        @include phone(){
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.product-pic{
+    position: relative;
+    min-height: 800px;
+    @include phone(){
+        min-height: auto;
+    }
+    .pic-1{
+        position: absolute;
+        left: 50px;
+        top: 0;
+        @include s-pad(){
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+        @include phone(){
+            position: relative;
+            left: auto;
+            top: auto;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .pic-2{
+        position: absolute;
+        right: 135px;
+        bottom: 170px;
+        z-index: -1;
+        @include s-pad(){
+            position: relative;
+            right: auto;
+            bottom: auto;
+        }
+        @include phone(){
+            position: relative;
+            right: auto;
+            bottom: auto;
+        }
+    }
+
+    .pic-1 .content-pic{
+        @include bg-img-default(360px,300px);
+
+        @include s-pad(){
+            margin: 0 auto 200px;
+        }
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 83%;
+            margin: 0 auto;
+        }
+
+        .border-decoration{
+            width: 480px;
+            height: 200px;
+            position: absolute;
+            bottom: -50px;
+            left: -60px;
+            right: 0;
+            z-index: -1;
+
+            @include s-pad(){
+                left: 0px;
+                margin: 0 auto;
+            }
+            @include phone(){
+               
+            }
+        }
+    }
+
+    .pic-2 .content-pic{
+        @include bg-img-default(480px,400px);
+
+        @include s-pad(){
+            margin: 0 auto;
+        }
+        @include phone(){
+            margin: 0 auto;
+            width: 100%;
+            height: 0px;
+            padding-bottom: 83%;
+        }
+        .bg-decoration{
+            position: absolute;
+            top: -100px;
+            right: -60px;
+            z-index: -2;
+            @include s-pad(){
+                top: -80px;
+                right: -35px;
+            }
+
+        }
+        .decoration{
+            position: absolute;
+            left: -185px;
+            bottom: -50px;
+            z-index: 1;
+            @include s-pad(){
+                left: 0;
+                bottom: -50px;
+            }
+        }
+    }
+}
 
 
 

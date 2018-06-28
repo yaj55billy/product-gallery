@@ -28,6 +28,22 @@
     }
 }
 
+.content-pic{
+    transition: all 0.3s;
+
+    .index-link{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+    }
+
+    &:hover .index-link{
+        background-color: rgba(232, 251, 247, 0.1);
+        
+    }
+}
+
 .pattern1{
 
     width: 60%;
