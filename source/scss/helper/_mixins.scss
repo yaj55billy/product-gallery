@@ -1,0 +1,156 @@
+
+//  ----Variables 
+// color
+$color-black: #000000;
+$color-50E3C2: #50E3C2;
+$color-graylight: rgba(0,0,0,0.10);
+$color-graydark: rgba(0,0,0,0.30);
+
+
+// font-size
+$font-base: 16px;
+$font-h1: 72px;
+$font-h2: 48px;
+$font-italic: 24px;
+$font-subtitle: 24px;
+$font-p: 16px;
+$font-logo: 20px;
+
+//  ----Variables END 
+
+
+// Mixins
+
+//排版平均分配
+           //  欄位數量    ,   欄位間距
+@mixin grid-equally($col-num,$col_gutter) {
+        //總寬度 -    欄位間距  *    (欄位數量-1)      /   欄位數量
+    width: ($width - $col_gutter*($col-num - 1) ) / $col-num;
+    margin-right: $col_gutter;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+                //   欄位數量
+    &:nth-child(#{$col-num}n){
+        margin-right: 0;
+    }
+}
+//排版平均分配 END
+
+//排版比例分配 50% 50% 
+
+
+//排版比例分配 END
+
+
+
+
+
+
+@mixin transition($transition){
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($property){
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+
+@mixin box-shadow($property){
+    box-shadow: $property;
+    -moz-box-shadow: $property;
+    -webkit-box-shadow: $property;
+}
+
+@mixin border-radius($property){
+    border-radius: $property;
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+}
+
+@mixin box-sizing-default(){
+    box-sizing: border-box;
+    -webkit-sizing: border-box;
+    -moz-sizing: border-box;
+}
+
+@mixin centerVH(){
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include transform(translateY(-50%));
+}
+
+
+@mixin clearfix() {
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+}
+
+@mixin bg-img-default($width,$height){
+    width: $width;
+    height: $height;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: 因有時候會寫在HTML 所以這邊不做定義
+}
+
+@mixin html-default(){
+    width: 100%;
+    line-height: 1.7;
+    word-wrap: break-word;
+    word-break: normal;
+    img{
+        height: auto !important;
+    }
+    iframe{
+        height: auto !important
+    }
+};
+
+
+// rwd
+@mixin phone(){
+    @media (min-width: 320px) and (max-width: 600px) {
+        @content
+    }
+};
+
+@mixin s-pad(){
+    @media (min-width:601px) and (max-width: 959px) {
+        @content
+    }
+};
+
+@mixin desk(){
+    @media (min-width:960px) {
+        @content
+    }
+};
+
+
+
+
+// rwd END
+
+
+
+
+
+
+// Mixins END 
+
+

@@ -1,0 +1,730 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* RESET END */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* layout */
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+img {
+  max-width: 100%;
+  min-height: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Roboto','Microsoft JhengHei',serif,sans-serif;
+  padding: 33px 0;
+  min-height: 1000px; }
+
+.desk {
+  display: block; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .desk {
+      display: none; } }
+
+.phone {
+  display: none; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .phone {
+      display: block; } }
+
+.wrap {
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 960px) {
+    .wrap {
+      max-width: 940px; } }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .wrap {
+      max-width: 600px; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .wrap {
+      max-width: 88%; } }
+
+.content .section {
+  padding: 50px 0 70px; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .content .section {
+      padding: 30px 0; } }
+
+.title {
+  font-size: 72px;
+  font-weight: bold;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  margin: 7px 0 35px; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .title {
+      font-size: 52px; } }
+
+.content-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .content-title {
+      font-size: 40px; } }
+
+.content-num {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .content-num {
+      display: none !important; } }
+
+.font-italic {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #000; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .font-italic {
+      color: #50E3C2 !important; } }
+
+.decoration {
+  width: 250px;
+  height: 100px;
+  background-image: url(../images/pattern.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .decoration {
+      width: 200px;
+      height: 80px;
+      display: none !important; } }
+
+.border-decoration {
+  width: 240px;
+  height: 200px;
+  border: 20px solid #50E3C2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .border-decoration {
+      width: 200px;
+      height: 180px;
+      border: 15px solid #50E3C2;
+      display: none; } }
+
+.bg-decoration {
+  width: 240px;
+  height: 200px;
+  background-color: #50E3C2; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .bg-decoration {
+      width: 200px;
+      height: 180px;
+      display: none; } }
+
+/* layout END */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* index */
+.logo {
+  width: 100%;
+  text-align: center; }
+  .logo .logo-text {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 20px; }
+
+.content-title:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 26px;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2); }
+
+.pattern1 {
+  width: 60%;
+  margin-right: 3%;
+  float: left; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern1 {
+      width: 100%;
+      float: none;
+      margin: 15px auto 130px; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern1 {
+      width: 100%;
+      float: none;
+      margin: 0px auto 90px; } }
+  .pattern1 .content-pic {
+    width: 480px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern1 .content-pic {
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern1 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 83%;
+        margin: 0 auto; } }
+    .pattern1 .content-pic .content-title {
+      margin-top: -12px; }
+      .pattern1 .content-pic .content-title:before {
+        content: 'LINEN BLAZER'; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pattern1 .content-pic .content-title {
+          position: absolute;
+          bottom: -50px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          text-align: center; } }
+    .pattern1 .content-pic .border-decoration {
+      position: absolute;
+      top: -49px;
+      right: -60px;
+      z-index: -1; }
+    .pattern1 .content-pic .font-italic {
+      position: absolute;
+      -webkit-transform: rotate(-270deg);
+          -ms-transform: rotate(-270deg);
+              transform: rotate(-270deg);
+      right: -75px;
+      bottom: 30px;
+      z-index: -1; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pattern1 .content-pic .font-italic {
+          -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          right: 0;
+          bottom: auto;
+          top: -10px;
+          z-index: 1; } }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern1 .pattern1-bottom {
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern1 .pattern1-bottom {
+      text-align: center; } }
+  .pattern1 .pattern1-bottom .content-num, .pattern1 .pattern1-bottom .decoration {
+    display: inline-block;
+    vertical-align: top; }
+  .pattern1 .pattern1-bottom .decoration {
+    margin-top: -50px;
+    z-index: 2;
+    position: relative; }
+
+.pattern2 {
+  width: 30%;
+  margin-top: 70px;
+  float: right; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern2 {
+      width: 100%;
+      float: none;
+      margin: 70px auto 0; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern2 {
+      width: 100%;
+      float: none;
+      margin: 70px auto 0; } }
+  .pattern2 .content-pic {
+    width: 240px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern2 .content-pic {
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern2 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 83%;
+        margin: 0 auto; } }
+    .pattern2 .content-pic .bg-decoration {
+      position: absolute;
+      top: -50px;
+      right: -60px;
+      z-index: -1; }
+      .pattern2 .content-pic .bg-decoration .border-decoration {
+        position: absolute;
+        top: -50px;
+        right: -60px;
+        z-index: -2; }
+        .pattern2 .content-pic .bg-decoration .border-decoration .content-num {
+          position: absolute;
+          top: -25px;
+          right: -20px; }
+  .pattern2 .content-title {
+    text-align: right;
+    position: relative;
+    margin-top: 20px; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern2 .content-title {
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern2 .content-title {
+        text-align: center; } }
+    .pattern2 .content-title:before {
+      content: 'FREELIFT'; }
+  .pattern2 .font-italic {
+    margin-left: -5px;
+    margin-bottom: 3px; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern2 .font-italic {
+        text-align: center;
+        margin-left: 0px; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern2 .font-italic {
+        text-align: right;
+        margin-left: 0;
+        -webkit-transform: translateY(15px);
+            -ms-transform: translateY(15px);
+                transform: translateY(15px);
+        position: relative;
+        z-index: 1; } }
+
+.pattern3 {
+  width: 60%;
+  margin-right: 3%;
+  float: left; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern3 {
+      width: 100%;
+      margin: 0 auto 200px;
+      float: none; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern3 {
+      width: 100%;
+      margin: 0 auto 120px;
+      float: none; } }
+  .pattern3 .content-pic {
+    width: 480px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern3 .content-pic {
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern3 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 41.6%;
+        margin: 0 auto; } }
+    .pattern3 .content-pic .bg-decoration {
+      position: absolute;
+      top: -50px;
+      left: 0px;
+      z-index: -1; }
+    .pattern3 .content-pic .content-title {
+      text-align: right;
+      -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
+              transform: translateY(-50px); }
+      .pattern3 .content-pic .content-title:before {
+        content: 'SUPER SKINNY'; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pattern3 .content-pic .content-title {
+          -webkit-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+                  transform: translateY(0px);
+          position: absolute;
+          bottom: -45px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          text-align: center; } }
+    .pattern3 .content-pic .border-decoration {
+      position: absolute;
+      bottom: -50px;
+      right: -60px;
+      z-index: -1; }
+      .pattern3 .content-pic .border-decoration .content-num {
+        position: absolute;
+        bottom: -22px;
+        right: -18px; }
+  .pattern3 .font-italic {
+    margin-top: 3px;
+    margin-left: 20px; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern3 .font-italic.phone {
+      margin-left: 0px;
+      position: absolute;
+      right: 0;
+      top: -15px; } }
+
+.pattern4 {
+  width: 30%;
+  float: right; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern4 {
+      width: 100%;
+      float: none; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern4 {
+      width: 100%;
+      float: none; } }
+  .pattern4 .content-pic {
+    width: 240px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern4 .content-pic {
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern4 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 100%;
+        margin: 0 auto; } }
+    .pattern4 .content-pic .font-italic {
+      -webkit-transform: rotate(-270deg);
+          -ms-transform: rotate(-270deg);
+              transform: rotate(-270deg);
+      position: absolute;
+      top: -85px;
+      right: -12px; }
+      @media (min-width: 601px) and (max-width: 959px) {
+        .pattern4 .content-pic .font-italic {
+          -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          position: absolute;
+          top: -25px;
+          right: 0; } }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pattern4 .content-pic .font-italic {
+          -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          position: absolute;
+          top: -12px;
+          right: 0; } }
+    .pattern4 .content-pic .content-title {
+      -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+              transform: rotate(270deg);
+      position: absolute;
+      top: 48px;
+      left: -100px; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pattern4 .content-pic .content-title {
+          -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          top: auto;
+          bottom: -47px;
+          left: 0px;
+          right: 0;
+          text-align: center; } }
+      .pattern4 .content-pic .content-title:before {
+        content: 'DENIM'; }
+    .pattern4 .content-pic .border-decoration {
+      position: absolute;
+      top: -100px;
+      left: -60px;
+      z-index: -1; }
+  .pattern4 .pattern4-bottom {
+    margin-left: -55px; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern4 .pattern4-bottom {
+        margin-left: 0px;
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern4 .pattern4-bottom {
+        margin-left: 0px;
+        text-align: center; } }
+    .pattern4 .pattern4-bottom .content-num, .pattern4 .pattern4-bottom .decoration {
+      display: inline-block;
+      vertical-align: top; }
+
+.pa5-and-pa6 > * {
+  width: 50%;
+  float: left; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pa5-and-pa6 > * {
+      width: 100%;
+      float: none; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pa5-and-pa6 > * {
+      width: 100%;
+      float: none; } }
+
+.pa5-and-pa6 .pattern5 {
+  padding-bottom: 120px;
+  margin-top: -120px; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pa5-and-pa6 .pattern5 {
+      margin-top: 0; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pa5-and-pa6 .pattern5 {
+      margin-top: 60px;
+      padding-bottom: 90px; } }
+  .pa5-and-pa6 .pattern5 .content-pic {
+    width: 240px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pa5-and-pa6 .pattern5 .content-pic {
+        float: none;
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pa5-and-pa6 .pattern5 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 83%;
+        float: none;
+        margin: 0 auto; } }
+    .pa5-and-pa6 .pattern5 .content-pic .decoration {
+      position: absolute;
+      top: -50px;
+      left: -190px; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pa5-and-pa6 .pattern5 .content-pic .decoration {
+          top: 0;
+          left: 0; } }
+    .pa5-and-pa6 .pattern5 .content-pic .content-title {
+      position: absolute;
+      top: 35px;
+      left: -220px; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pa5-and-pa6 .pattern5 .content-pic .content-title {
+          top: auto;
+          left: 0;
+          right: 0;
+          bottom: -48px;
+          text-align: center; } }
+      .pa5-and-pa6 .pattern5 .content-pic .content-title:before {
+        content: 'SWEATSHIRTS'; }
+    .pa5-and-pa6 .pattern5 .content-pic .border-decoration {
+      width: 240px;
+      height: 100px;
+      position: absolute;
+      bottom: -50px;
+      left: -130px;
+      z-index: -1; }
+      .pa5-and-pa6 .pattern5 .content-pic .border-decoration .content-num {
+        position: absolute;
+        left: -19px;
+        top: -22px; }
+    .pa5-and-pa6 .pattern5 .content-pic .font-italic {
+      position: absolute;
+      top: 0;
+      left: 240px;
+      width: 200px; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pa5-and-pa6 .pattern5 .content-pic .font-italic {
+          left: auto;
+          right: 0;
+          width: auto;
+          top: -6px; } }
+
+.pa5-and-pa6 .pattern6 {
+  margin-top: 30px; }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pa5-and-pa6 .pattern6 {
+      margin-top: 15px; } }
+  .pa5-and-pa6 .pattern6 .content-title {
+    text-align: right;
+    position: relative; }
+    .pa5-and-pa6 .pattern6 .content-title:before {
+      content: 'VINTAGE DENIM'; }
+  .pa5-and-pa6 .pattern6 .content-pic {
+    width: 480px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pa5-and-pa6 .pattern6 .content-pic {
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pa5-and-pa6 .pattern6 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 83%;
+        margin: 0 auto; } }
+    .pa5-and-pa6 .pattern6 .content-pic .border-decoration {
+      width: 480px;
+      height: 200px;
+      position: absolute;
+      bottom: -50px;
+      left: 0px;
+      z-index: -1; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pa5-and-pa6 .pattern6 .content-pic .border-decoration {
+          width: 100%; } }
+    .pa5-and-pa6 .pattern6 .content-pic .bg-decoration {
+      position: absolute;
+      bottom: 0;
+      left: -60px;
+      z-index: -1; }
+      .pa5-and-pa6 .pattern6 .content-pic .bg-decoration .content-num {
+        position: absolute;
+        top: -45px;
+        left: 0; }
+    .pa5-and-pa6 .pattern6 .content-pic .content-title.phone {
+      position: absolute;
+      bottom: -45px;
+      left: 0;
+      right: 0;
+      text-align: center; }
+    .pa5-and-pa6 .pattern6 .content-pic .font-italic.phone {
+      text-align: right;
+      -webkit-transform: translateY(-12px);
+          -ms-transform: translateY(-12px);
+              transform: translateY(-12px); }
+  .pa5-and-pa6 .pattern6 .font-italic {
+    text-align: center; }
+
+.pattern7 {
+  margin-top: -250px; }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern7 {
+      margin-top: 0; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern7 {
+      margin-top: 35px; } }
+  @media (min-width: 601px) and (max-width: 959px) {
+    .pattern7 .font-italic {
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    .pattern7 .font-italic {
+      text-align: right;
+      -webkit-transform: translateY(10px);
+          -ms-transform: translateY(10px);
+              transform: translateY(10px);
+      position: relative;
+      z-index: 1; } }
+  .pattern7 .content-pic {
+    width: 240px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min-width: 601px) and (max-width: 959px) {
+      .pattern7 .content-pic {
+        margin: 0 auto; } }
+    @media (min-width: 320px) and (max-width: 600px) {
+      .pattern7 .content-pic {
+        width: 100%;
+        height: 0px;
+        padding-bottom: 100%;
+        margin: 0 auto; } }
+    .pattern7 .content-pic .content-title {
+      position: absolute;
+      top: 65px;
+      right: -115px;
+      -webkit-transform: rotate(-270deg);
+          -ms-transform: rotate(-270deg);
+              transform: rotate(-270deg); }
+      .pattern7 .content-pic .content-title:before {
+        content: 'EDITION'; }
+      @media (min-width: 320px) and (max-width: 600px) {
+        .pattern7 .content-pic .content-title {
+          -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          right: 0;
+          left: 0;
+          text-align: center;
+          top: auto;
+          bottom: -46px; } }
+    .pattern7 .content-pic .border-decoration {
+      width: 240px;
+      height: 400px;
+      position: absolute;
+      top: -50px;
+      right: -60px;
+      z-index: -1; }
+    .pattern7 .content-pic .bg-decoration {
+      position: absolute;
+      bottom: 0;
+      right: -120px;
+      z-index: -1; }
+      .pattern7 .content-pic .bg-decoration .content-num {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg); }
+
+/* index END */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* product */
+/* product END */
+/* ---------------------------------------------------------- */
+
+/*# sourceMappingURL=all.css.map */

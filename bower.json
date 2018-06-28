@@ -1,0 +1,22 @@
+{
+  "name": "billy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "紀冠逸 <yaj55ushydna@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "owl.carousel": "^2.3.4",
+    "animate.css": "^3.5.2"
+  }
+}

@@ -1,0 +1,641 @@
+/* ---------------------------------------------------------- */
+/* index */
+
+.logo{
+    width: 100%;
+    text-align: center;
+    .logo-text{
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        padding: 2px 8px;
+        font-size: $font-logo;
+    }
+}
+
+.content-title{
+    &:before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 26px;
+        overflow: hidden;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        color: rgba(0, 0, 0, 0.3);
+        text-shadow: 0px -1px 10px rgba(0,0,0,0.2);
+    }
+}
+
+.pattern1{
+
+    width: 60%;
+    margin-right: 3%;
+    float: left;
+
+    @include s-pad(){
+        width: 100%;
+        float: none;
+        margin: 15px auto 130px;
+    };
+
+    @include phone(){
+        width: 100%;
+        float: none;
+        margin: 0px auto 90px;
+    }
+
+    .content-pic{
+        @include bg-img-default(480px,400px);
+        position: relative;
+
+        @include s-pad(){
+            margin: 0 auto;
+        }
+
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 83%;
+            margin: 0 auto;
+        }
+
+        .content-title{
+            margin-top: -12px;
+            &:before{
+                content: 'LINEN BLAZER';
+            }
+            @include phone(){
+                position: absolute;
+                bottom: -50px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                text-align: center;
+            }
+        }
+
+        .border-decoration{
+            position: absolute;
+            top: -49px;
+            right: -60px;
+            z-index: -1;
+        }
+        .font-italic{
+            position: absolute;
+            transform: rotate(-270deg);
+            right: -75px;
+            bottom: 30px;
+            z-index: -1; 
+            @include phone(){
+                transform: rotate(0deg);
+                right: 0;
+                bottom: auto;
+                top: -10px;
+                z-index: 1;
+            }
+        }
+    }
+    .pattern1-bottom{
+        @include s-pad(){
+            text-align: center;
+        }
+        @include phone(){
+            text-align: center;
+        }
+
+        .content-num,.decoration{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .decoration{
+            margin-top: -50px;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+}
+
+
+.pattern2{
+
+    width: 30%;
+    margin-top: 70px;
+    float: right;
+
+    @include s-pad(){
+        width: 100%;
+        float: none;
+        margin: 70px auto 0;
+    };
+
+    @include phone(){
+        width: 100%;
+        float: none;
+        margin: 70px auto 0;
+    }
+
+    .content-pic{
+        @include bg-img-default(240px,200px);
+        position: relative;
+
+        @include s-pad(){
+            margin: 0 auto;
+        }
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 83%;
+            margin: 0 auto;
+        }
+
+        .bg-decoration{
+            position: absolute;
+            top: -50px;
+            right: -60px;
+            z-index: -1;
+            .border-decoration{
+                position: absolute;
+                top: -50px;
+                right: -60px;
+                z-index: -2;
+                .content-num{
+                    position: absolute;
+                    top: -25px;
+                    right: -20px;
+                }
+            }
+        }
+    }
+    .content-title{
+        text-align: right;
+        position: relative;
+        margin-top: 20px;
+        @include s-pad(){
+            text-align: center;
+        };
+        @include phone(){
+            text-align: center;
+        }
+
+        &:before{
+            content: 'FREELIFT';
+        }
+    }
+    .font-italic{
+        margin-left: -5px;
+        margin-bottom: 3px;
+        @include s-pad(){
+            text-align: center;
+            margin-left: 0px;
+        };
+        @include phone(){
+            text-align: right;
+            margin-left: 0;
+            transform: translateY(15px);
+            position: relative;
+            z-index: 1;
+        }
+
+    }
+}
+
+.pattern3{
+
+    width: 60%;
+    margin-right: 3%;
+    float: left;
+
+    @include s-pad(){
+        width: 100%;
+        margin: 0 auto 200px;
+        float: none;
+    };
+
+    @include phone(){
+        width: 100%;
+        margin: 0 auto 120px;
+        float: none;
+    }
+
+    .content-pic{
+        @include bg-img-default(480px,200px);
+        position: relative;
+
+        @include s-pad(){
+            margin: 0 auto;
+        };
+
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 41.6%;
+            margin: 0 auto;
+        }
+
+        .bg-decoration{
+            position: absolute;
+            top: -50px;
+            left: 0px;
+            z-index: -1;
+        }
+
+        .content-title{
+            text-align: right;
+            transform: translateY(-50px);
+            &:before{
+                content: 'SUPER SKINNY';
+            }
+            @include phone(){
+                transform: translateY(0px);
+                position: absolute;
+                bottom: -45px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                text-align: center;
+            }
+
+        }
+
+        .border-decoration{
+            position: absolute;
+            bottom: -50px;
+            right: -60px;
+            z-index: -1;
+
+            .content-num{
+                position: absolute;
+                bottom: -22px;
+                right: -18px;
+            }
+        }
+    }
+    .font-italic{
+        margin-top: 3px;
+        margin-left: 20px;
+    }
+    .font-italic.phone{
+        @include phone(){
+            margin-left: 0px;
+            position: absolute;
+            right: 0;
+            top: -15px;
+        }
+
+    }
+}
+
+.pattern4{
+    width: 30%;
+    float: right;
+
+    @include s-pad(){
+        width: 100%;
+        float: none;
+    };
+    @include phone(){
+        width: 100%;
+        float: none;
+    }
+
+    .content-pic{
+        @include bg-img-default(240px,400px);
+        position: relative;
+
+        @include s-pad(){
+            margin: 0 auto;
+        };
+
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 100%;
+            margin: 0 auto;
+        }
+
+        .font-italic{
+            transform: rotate(-270deg);
+            position: absolute;
+            top: -85px;
+            right: -12px;
+
+            @include s-pad(){
+                transform: rotate(0deg);
+                position: absolute;
+                top: -25px;
+                right: 0;
+            }
+            @include phone(){
+                transform: rotate(0deg);
+                position: absolute;
+                top: -12px;
+                right: 0;
+            }
+        }
+
+        .content-title{
+            transform: rotate(270deg);
+            position: absolute;
+            top: 48px;
+            left: -100px;
+            @include phone(){
+                transform: rotate(0deg);
+                top: auto;
+                bottom: -47px;
+                left: 0px;
+                right: 0;
+                text-align: center;
+            }
+
+            &:before{
+                content: 'DENIM';
+            }
+        }
+
+        .border-decoration{
+            position: absolute;
+            top: -100px;
+            left: -60px;
+            z-index: -1;
+        }
+    }
+
+    .pattern4-bottom{
+        margin-left: -55px;
+
+        @include s-pad(){
+            margin-left: 0px;
+            text-align: center;
+        }
+        @include phone(){
+            margin-left: 0px;
+            text-align: center;
+        }
+
+        .content-num,.decoration{
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}
+
+
+.pa5-and-pa6{
+
+    > *{
+        width: 50%;
+        float: left;
+        @include s-pad(){
+            width: 100%;
+            float: none;
+        };
+        @include phone(){
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .pattern5{
+        padding-bottom: 120px;
+        margin-top: -120px;
+        @include s-pad(){
+            margin-top: 0;
+        };
+
+        @include phone(){
+            margin-top: 60px;
+            padding-bottom: 90px;
+        }
+        .content-pic{
+            @include bg-img-default(240px,200px);
+            float: right;
+            position: relative;
+
+            @include s-pad(){
+                float: none;
+                margin: 0 auto;
+            };
+
+            @include phone(){
+                width: 100%;
+                height: 0px;
+                padding-bottom: 83%;
+                float: none;
+                margin: 0 auto;
+            }
+
+            .decoration{
+                position: absolute;
+                top: -50px;
+                left: -190px;
+                @include phone(){
+                    top: 0;
+                    left: 0;
+                }
+               
+            }
+            .content-title{
+                position: absolute;
+                top: 35px;
+                left: -220px;
+
+                @include phone(){
+                    top: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: -48px;
+                    text-align: center;
+                }
+                &:before{
+                    content: 'SWEATSHIRTS';
+                }
+            }
+
+            .border-decoration{
+                width: 240px;
+                height: 100px;
+                position: absolute;
+                bottom: -50px;
+                left: -130px;
+                z-index: -1;
+                .content-num{
+                    position: absolute;
+                    left: -19px;
+                    top: -22px;
+                }
+            }
+            .font-italic{
+                position: absolute;
+                top: 0;
+                left: 240px;
+                width: 200px;
+                @include phone(){
+                    left: auto;
+                    right: 0;
+                    width: auto;
+                    top: -6px;
+                }
+            }
+
+            
+        }
+    }
+    
+    .pattern6{
+        margin-top: 30px;
+        
+        @include phone(){
+            margin-top: 15px;
+        }
+
+        .content-title{
+            text-align: right;
+            position: relative;
+            &:before{
+                content: 'VINTAGE DENIM';
+            }
+        }
+        .content-pic{
+            @include bg-img-default(480px,400px);
+            position: relative;
+
+            @include s-pad(){
+                margin: 0 auto;
+            }
+
+            @include phone(){
+                width: 100%;
+                height: 0px;
+                padding-bottom: 83%;
+                margin: 0 auto;
+            }
+        
+            .border-decoration{
+                width: 480px;
+                height: 200px;
+                position: absolute;
+                bottom: -50px;
+                left: 0px;
+                z-index: -1;
+
+                @include phone(){
+                    width: 100%;
+                }
+            }
+            
+            .bg-decoration{
+                position: absolute;
+                bottom: 0;
+                left: -60px;
+                z-index: -1;
+                .content-num{
+                    position: absolute;
+                    top: -45px;
+                    left: 0;
+                }
+            }
+            .content-title.phone{
+                position: absolute;
+                bottom: -45px;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+
+            .font-italic.phone{
+                text-align: right;
+                transform: translateY(-12px);
+            }
+        }
+        .font-italic{
+            text-align: center;
+        }
+    }
+}
+
+.pattern7{
+    margin-top: -250px;
+
+    @include s-pad(){
+        margin-top: 0;
+    }
+    @include phone(){
+        margin-top: 35px;
+    }
+
+    .font-italic{
+        @include s-pad(){
+            text-align: center;
+        }
+        @include phone(){
+            text-align: right;
+            transform: translateY(10px);
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .content-pic{
+        @include bg-img-default(240px,400px);
+        position: relative;
+
+        @include s-pad(){
+            margin: 0 auto;
+        }
+
+        @include phone(){
+            width: 100%;
+            height: 0px;
+            padding-bottom: 100%;
+            margin: 0 auto;
+        }
+
+        .content-title{
+            position: absolute;
+            top: 65px;
+            right: -115px;
+            transform: rotate(-270deg);
+            &:before{
+                content: 'EDITION';
+            }
+            @include phone(){
+                transform: rotate(0deg);
+                right: 0;
+                left: 0;
+                text-align: center;
+                top: auto;
+                bottom: -46px;
+            }
+        }
+        .border-decoration{
+            width: 240px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            right: -60px;
+            z-index: -1;
+        }
+        .bg-decoration{
+            position: absolute;
+            bottom: 0;
+            right: -120px;
+            z-index: -1;
+            .content-num{
+                position: absolute;
+                top:auto;
+                bottom: 0;
+                right: 0;
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+
+
+/* index END */
+/* ---------------------------------------------------------- */
+

@@ -1,0 +1,93 @@
+
+/* ---------------------------------------------------------- */
+/* order */
+
+
+
+.order-title{
+    @include clearfix();
+    margin-bottom: 15px;
+    color: #000;
+
+    > * {
+        float: left;
+        width: 50%;
+    }
+    .ot-status{
+        text-align: left;
+        .ot-status-check{
+            cursor: pointer;
+        }
+        .fa-tags{
+            margin-left:15px;
+        }
+    }
+    .ot-add{
+        text-align: right;
+    }
+}
+
+.order-con{
+    width: 100%;
+    > *{
+        padding: 10px 25px;
+    }
+    span{
+        font-size: 14px;
+        color: #000000;
+        line-height: 21px;
+    }
+
+    .order-header{
+        background-color: lightyellow;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 0.5fr 1fr 1fr 1fr 1fr;
+        > * {
+            font-size: $remark-size;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+        }
+    }
+    .order-body-list{
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 0.5fr 1fr 1fr 1fr 1fr;
+        padding: 10px 0 20px;
+
+        > *{
+            text-align: center;
+        }
+
+
+        .ob-customer >*{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .ob-product li{
+            display: grid;
+            grid-template-columns: 1.2fr 0.3fr;
+        }
+
+        .od-cart span,.ob-check span{
+            display: inline-block;
+            width: 100%;
+        }
+
+        .product-name span{
+            display: inline-block;
+            width: 100%;
+        }
+
+        .ob-address{
+            text-align: left;
+        }
+
+    }
+    .order-body-list:nth-child(2n){
+        background-color: #e8e8e8;
+    }
+}
+
+/* order END */
+/* ---------------------------------------------------------- */
